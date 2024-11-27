@@ -1,0 +1,154 @@
+.user-management {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: #333;
+}
+
+.add-user-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.add-user-btn:hover {
+  background-color: #45a049;
+}
+
+.user-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.user-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+  background-color: #008cba;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background-color: #007bb5;
+}
+
+.delete-btn {
+  background-color: #f44336;
+}
+
+.delete-btn:hover {
+  background-color: #e6392c;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 10px;
+  width: 100%; /* Ensure it takes up full width of the card */
+  max-width: 400px; /* Limit max width */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.modal-content h3 {
+  margin-bottom: 10px; /* Reduced margin */
+  font-size: 18px; /* Adjusted font size for better fit */
+}
+
+.modal-content label {
+  display: block;
+  margin-bottom: 8px; /* Reduced margin between label and input */
+}
+
+.modal-content input,
+.modal-content select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 12px; /* Adjusted margin for better spacing */
+  font-size: 14px; /* Adjusted font size */
+}
+
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.save-btn,
+.cancel-btn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #45a049;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #e6392c;
+}
+
+.toast-notification {
+  position: fixed;
+  bottom: 20px;  /* Position at the bottom */
+  right: 20px;   /* Position at the right */
+  background-color: #333;
+  color: white;
+  padding: 8px 15px;  /* Smaller padding for a more compact size */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;  /* Smaller font size */
+  max-width: 300px;  /* Optional: limit width for long messages */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);  /* Optional: shadow for better visibility */
+}
+
+.toast-notification:hover {
+  opacity: 0.9;  /* Slight change in opacity when hovered */
+}
+

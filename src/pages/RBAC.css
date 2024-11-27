@@ -1,0 +1,88 @@
+/* Overall RBAC container styling */
+
+
+.rbac {
+    background-color: #eaf0f4; /* Soft light blue background for the whole page */
+    min-height: 100vh; /* Ensure the page takes full height */
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: auto; /* Ensure the page is scrollable */
+  }
+  
+  /* Title styling */
+  .rbac-title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 20px;
+    font-weight: bold; /* Make the title bold */
+    font-family: 'Poppins', sans-serif; /* Custom font style for the heading */
+    
+  }
+  
+  
+  /* Card container styling */
+  .rbac-container {
+    display: flex;
+    justify-content: space-between; /* Space cards evenly */
+    gap: 20px; /* Add spacing between cards */
+    padding: 20px;
+    width: 100%; /* Full width */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center the cards */
+    align-items: flex-start; /* Align cards at the top */
+  }
+  
+  /* Individual card styling */
+  .rbac-card {
+    flex: 1;
+    min-width: 280px; /* Minimum width to ensure responsiveness */
+    background-color: #ffffff; /* White card background */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 12px; /* Rounded corners */
+    padding: 30px;
+    color: #333;
+    margin-bottom: 20px; /* Spacing between the cards */
+    transition: transform 0.3s ease;
+    max-height: 80vh; /* Limit the card height to prevent overflow */
+    overflow-y: auto; /* Scroll within the card if content is large */
+  }
+  
+  /* Hover effect on the card */
+  .rbac-card:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Card headings */
+  .rbac-card h2 {
+    color: #34495e;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Adjust font size inside the cards */
+  .rbac-card > div {
+    font-size: 1rem;
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media (max-width: 768px) {
+    .rbac-container {
+      flex-direction: column; /* Stack the cards on smaller screens */
+      gap: 10px;
+    }
+  }
+  
+  /* Adding a smooth scrolling effect to the whole page */
+  html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
